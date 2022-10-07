@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+   long long int sum=0,max,min;
+    
+   long long int a[5];
+    for(int i=0;i<5;i++)
+    {
+        cin>>a[i];
+        sum=sum+a[i];
+        
+    }
+    min=a[0];
+    for(int i=1;i<5;i++){
+    if(min>a[i])
+    min=a[i];
+    }
+    max=a[0];
+    for(int i=1;i<5;i++){
+    if(max<a[i])
+    max=a[i];}
+    cout<<sum-max<<" "<<sum-min;
+}
